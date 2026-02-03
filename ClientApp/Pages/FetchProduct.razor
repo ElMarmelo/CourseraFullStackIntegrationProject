@@ -1,0 +1,31 @@
+@page "/fetchproducts"
+@inject HttpClient HttpClient
+
+<h3> Fetch Product </h3>
+
+@inject ProductDataService ProductDataService
+
+<ul>
+    @if (products != null)
+    {
+        foreach (var product in products)
+        {
+            <li>Product: @product.Name - Price: $@product.Price - Stock: @product.Stock</li>
+        }
+    }
+    else
+    {
+        <li>Loading...</li>
+    }
+</ul>
+
+@code {
+    private List<Product>? products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await ProductDataService.GetProductsAsync();
+    }
+
+
+}

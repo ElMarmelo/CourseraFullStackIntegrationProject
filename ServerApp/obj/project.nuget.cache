@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "VDs69a3ah4g=",
+  "success": true,
+  "projectFilePath": "/Users/millow/Documents/CSharpProjects/CourseraFullStackApp/ServerApp/ServerApp.csproj",
+  "expectedPackageFiles": [
+    "/Users/millow/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "/Users/millow/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
